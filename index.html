@@ -1,24 +1,65 @@
 <html lang="en">
-    
-    <head>
-        <title>Please Work</title>
-        <link rel="icon" type="image/x-icon" href="fun_pandas.JPG">
-        <script src="script.js"></script>
-    </head>
 
-    <body style="background-color:powderblue;">
-        
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        <img style="margin-left:auto;margin-right:auto;display:block;width:575;" id="panda_image" src="fun_pandas.JPG" alt="A photo of wrestling pandas">
-    </a>
-<!--        <button onclick="myFunction()" style="margin-left:auto;margin-right:auto;display:block;width:575;">
+<head>
+    <title>Please Work</title>
+    <link rel="icon" type="image/x-icon" href="fun_pandas.JPG">
+</head>
+
+<body style="background-color:powderblue;">
+
+    <img style="margin-left:auto;margin-right:auto;display:block;width:575;" id="panda_image" src="fun_pandas.JPG"
+        alt="A photo of wrestling pandas">
+    <div id="rick-roll" style="display:none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <!--        <button onclick="myFunction()" style="margin-left:auto;margin-right:auto;display:block;width:575;">
             <img width="560" id="panda_image" src="fun_pandas.JPG" alt="A photo of wrestling pandas">
             <iframe id="the_surprise" width="560" height="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ADzW_pvX_WgYq0r7&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </button>
 -->
-        <h2 id="changing_text" style="color:rgb(56, 74, 153);font-family:'Courier New', Courier, monospace;text-align:center;">Try clicking on the pandas!</h2>
+    <h2 id="changing_text"
+        style="color:rgb(56, 74, 153);font-family:'Courier New', Courier, monospace;text-align:center;">Try clicking on
+        the pandas!</h2>
 
-    </body>
+
+    <script>
+        // JavaScript to handle the surprise link click
+        document.getElementById('panda_image').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('rick-roll').style.display = 'block';
+        });
+    </script>
+
+</body>
 
 </html>
 
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+    <style>
+        /* Add CSS styling here */
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page!</h1>
+    <p>Click <a href="#" id="surprise-link">here</a> for a surprise!</p>
+
+    <div id="rick-roll" style="display:none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        // JavaScript to handle the surprise link click
+        document.getElementById('surprise-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('rick-roll').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+https://www.youtube.com/watch?v=dQw4w9WgXcQ -->
