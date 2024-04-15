@@ -1,7 +1,7 @@
 # Hello world
 
-this is the description
+I made a browser navigation tool for fun.
 
 ```bash
-im typing between 5 and 6
+this is made for desktop browsers only.
 ```

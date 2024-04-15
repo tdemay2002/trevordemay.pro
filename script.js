@@ -1,12 +1,38 @@
-function myFunction(){
-    document.getElementById("changing_text").innerText = "Thanks!!!";
-    document.getElementById("panda_image").style.display = "none";
-    document.getElementById("the_surprise").height = "315";
+var searchMethod = "bing";
 
-    var iframe = document.getElementById('the_surprise');
-    var currentSrc = iframe.src;
-    var hasAutoplay = currentSrc.includes('autoplay=1');
-    if (!hasAutoplay) {
-        iframe.src = currentSrc + (currentSrc.includes('?') ? '&' : '?') + 'autoplay=1';
-    }
+document.getElementById('searchbox').searchboxID.onchange = function() {
+    searchMethod = this.value;
 };
+
+function openBar() {
+    document.getElementById('side').style.width = '400px';
+    document.getElementById('open').style.opacity = '0';
+}
+
+function closeBar() {
+    document.getElementById('side').style.width = '0';
+    document.getElementById('open').style.opacity = '.75';
+}
+
+function goHome(){
+    document.getElementById('site').src = "https://bing.com";
+}
+
+function goTo(){
+    var searchEntry = document.getElementById('search').value;
+    // if searchbox is set to bing check what type of entry was entered
+    if (searchMethod == "bing"){
+        // if user entered url with https or http
+        if (searchEntry.indexOf('.') > 0 && searchEntry.indexOf('. ' == -1)){
+            document.getElementById('site').src = searchEntry;
+        } else {
+            document.getElementById('site').src = 'https://bing.com/search?q=' + searchEntry;
+        }
+        document.getElementById('search').value = '';
+        closeBar();
+
+    } else if (searchMethod == "youtube"){
+        document.getElementById('site').src = 'https://www.youtube.com/results?search_query=' + searchEntry
+    }
+
+}

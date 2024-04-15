@@ -1,24 +1,124 @@
+<!DOCTYPE html>
 <html lang="en">
     
     <head>
         <title>Please Work</title>
         <link rel="icon" type="image/x-icon" href="fun_pandas.JPG">
         <script src="script.js"></script>
+        <style>
+            body{
+                font-family: 'Lato', sans-serif;
+                padding: 0 0 0 0;
+                background-color: rgba(192,192,192,.3);
+            }
+            
+            #site{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                padding: 0 0 0 0;
+                border-width: 0;
+                top: 0;
+                left: 0;
+            }
+
+            .list li{
+                display: inline;
+                vertical-align: middle;
+            }
+
+            .sidebar{
+                position: fixed;
+                width: 400px;
+                height: 10%;
+                top: 0;
+                left: 0;
+                padding-top: 50px;
+                background-color: #111;
+                opacity: .75;
+                z-index: 2;
+                transition: .4s;
+            }
+
+            .sidebar a {
+                padding: 10px 10px 10px 20px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: inline;
+                transition: 0.3s;
+                overflow-x: hidden;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+            span {
+                padding: 10px 10px 10px 10px;
+                text-decoration: none;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                cursor:pointer;
+                position: absolute;
+                font-size: 35px;
+                background-color: #111;
+            }
+
+            span:hover{
+                color: white;
+            }
+            
+            #close {
+                margin-left: 50px; 
+                right: 15px;
+                top: 0;
+                font-size: 25px;
+                overflow-x: hidden;
+            }
+
+            #open {
+                left: 3px;
+                z-index: 1; 
+                font-size: 10px;
+                opacity: 0;
+                overflow-x: hidden;
+                top: 0;
+            }
+        </style>
     </head>
-
-    <body style="background-color:powderblue;">
-        
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        <img style="margin-left:auto;margin-right:auto;display:block;width:575;" id="panda_image" src="fun_pandas.JPG" alt="A photo of wrestling pandas">
-    </a>
-<!--        <button onclick="myFunction()" style="margin-left:auto;margin-right:auto;display:block;width:575;">
-            <img width="560" id="panda_image" src="fun_pandas.JPG" alt="A photo of wrestling pandas">
-            <iframe id="the_surprise" width="560" height="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ADzW_pvX_WgYq0r7&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </button>
--->
-        <h2 id="changing_text" style="color:rgb(56, 74, 153);font-family:'Courier New', Courier, monospace;text-align:center;">Try clicking on the pandas!</h2>
-
+    <body>
+        <iframe id='site' src='https://bing.com'></iframe>
+        <div class="sidebar" id="side" style="border:3px solid black;">
+            <span id='close' onclick='closeBar()'>&times;</span>
+            <span id='open' onclick='openBar()'>&#9776; Menu</span>
+            <a href="" onclick="goHome()">HOME</a>
+            <form id="searchbox" action='javascript:void(0)' onsubmit="goTo();">
+                <ul class="list li">
+                    <li>
+                        <input style="background-color:lightgrey;" id="search" name="q" type="text" placeholder="Search...">
+                        <input style="background-color:lightgrey;" type="submit" class="">
+                    </li>
+                    <li class="dropdown">
+                        <select class="dropbtn" style="background-color:lightgrey;" name="searchboxID" id="dropdown" placeholder="Please Select One...">
+                            <div class="dropdown-content">
+                                <option value="bing">Bing</option>
+                                <option value="youtube">Youtube</option>
+                            </div>
+                        </select>
+                    </li>	
+                </ul>
+            </form>
+        </div>
     </body>
-
 </html>
-
