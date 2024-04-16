@@ -1,8 +1,12 @@
 var searchMethod = "bing";
 
-document.getElementById('searchbox').searchboxID.onchange = function() {
+/*document.getElementById('searchbox').searchboxID.onchange = function() {
     searchMethod = this.value;
-};
+};*/
+
+function searchFunction(value){
+    searchMethod = value;
+}
 
 function openBar() {
     document.getElementById('side').style.width = '400px';
@@ -33,6 +37,7 @@ function goTo(){
 
     } else if (searchMethod == "youtube"){
         document.getElementById('site').src = 'https://www.youtube.com/results?search_query=' + searchEntry
+    } else {
+        console.log(searchMethod);
     }
-
 }
