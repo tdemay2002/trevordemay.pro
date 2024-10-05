@@ -1,4 +1,4 @@
-var searchMethod = "bing"; // can only be changed by html's dropdown menu. cycles between bing and youtube
+/*var searchMethod = "bing"; // can only be changed by html's dropdown menu. cycles between bing and youtube
 
 // changes searchMethod
 function searchFunction(value){
@@ -40,4 +40,4 @@ function goTo(){
     } else {
         console.log("searchMethod is set to " + searchMethod);
     }
-}
+}*/

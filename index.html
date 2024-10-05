@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--/*<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Please Work</title>
@@ -9,30 +9,30 @@
 
 
     <body>
-        <!--the iframe is set to be the background. the tool will be used to traverse it-->
+        @*the iframe is set to be the background. the tool will be used to traverse it
         <iframe id="site" src="https://bing.com"></iframe>
 
 
-        <!--the sidebar div is set to have an open and close function
+        @*the sidebar div is set to have an open and close function
             a home function that will take you back to the default browser page
-            and a search bar that can either search youtube or google-->
+            and a search bar that can either search youtube or google
 
         <div class="sidebar" id="side" style="border:3px solid black;">
             
-            <!--close and home functions-->
+            @*close and home functions
             <span id="close" onclick="closeBar()">&times;</span>
             <a href="" onclick="goHome()">HOME</a>
 
-            <!--this form is used for the search bar functionality-->
+            @*this form is used for the search bar functionality
             <form id="searchbox" action="javascript:void(0)" onsubmit="goTo();">
                 <ul class="list li">
-                    <!--creates search bar and submit button-->
+                    @*creates search bar and submit button
                     <li>
                         <input style="background-color:lightgrey;" id="search" name="q" type="text" placeholder="Search...">
                         <input style="background-color:lightgrey;" type="submit" action="javascript:void(0)">
                     </li>
 
-                    <!--uses a select menu to choose between bing and youtube searches-->
+                    @*uses a select menu to choose between bing and youtube searches
                     <li class="dropdown">
                         <select onclick="searchFunction(this.value)" style="background-color:lightgrey;" name="searchboxID" id="dropdown" placeholder="Please Select One...">
                             <div class="dropdown-content">
@@ -44,7 +44,53 @@
                 </ul>
             </form>
         </div>
-        <!--open sidebar button-->
+        @*open sidebar button
         <span id="open" onclick="openBar()">&#9776; Menu</span>
     </body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trevor DeMay's Portfolio - Software Engineer">
+    <title>Trevor DeMay | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trevor DeMay</h1>
+        <p class="title">Software Engineer</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about learning and coding. I started coding with HTML and JavaScript when I was in middle school and have continued to grow my skills ever since.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Currently working on several projects. Stay tuned for updates!</p>
+        <p><em>Projects coming soon...</em></p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my resume or view my professional experience.</p>
+        <a href="#" class="resume-link">Download Resume</a> <!-- Add your resume link here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me:</p>
+        <ul>
+            <li><a href="https://github.com/tdemay2002" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/trevor-demay-191942299" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trevor DeMay. All rights reserved.</p>
+    </footer>
+</body>
 </html>
