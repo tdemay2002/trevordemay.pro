@@ -1,6 +1,6 @@
 # Hello world
 
-I made a browser navigation tool for fun.
+Working on making myself a website for sharing my information with future employers.
 
 ```bash
 this is made for desktop browsers only.
