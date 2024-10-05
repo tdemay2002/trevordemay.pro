@@ -55,42 +55,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Trevor DeMay's Portfolio - Software Engineer">
     <title>Trevor DeMay | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Trevor DeMay</h1>
-        <p class="title">Software Engineer</p>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#home">Trevor DeMay</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm Trevor DeMay</h1>
+            <p>Software Engineer | Passionate about learning and coding</p>
+            <a href="#about" class="btn-primary">Learn More</a>
+        </div>
     </header>
 
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" class="card">
         <h2>About Me</h2>
-        <p>I am passionate about learning and coding. I started coding with HTML and JavaScript when I was in middle school and have continued to grow my skills ever since.</p>
+        <p>I am passionate about learning and coding. I started coding with HTML and JavaScript in middle school and have continued to expand my skillset ever since. I love building new projects and pushing myself to learn more.</p>
     </section>
 
-    <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="card">
         <h2>Projects</h2>
-        <p>Currently working on several projects. Stay tuned for updates!</p>
+        <p>Currently working on several exciting projects. Stay tuned!</p>
         <p><em>Projects coming soon...</em></p>
     </section>
 
-    <section id="resume">
+    <!-- Resume Section -->
+    <section id="resume" class="card">
         <h2>Resume</h2>
-        <p>You can download my resume or view my professional experience.</p>
-        <a href="#" class="resume-link">Download Resume</a> <!-- Add your resume link here -->
+        <p>Check out my professional experience and download my resume.</p>
+        <a href="#" class="btn-secondary">Download Resume</a>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="card">
         <h2>Contact</h2>
-        <p>Connect with me:</p>
-        <ul>
-            <li><a href="https://github.com/tdemay2002" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/trevor-demay-191942299" target="_blank">LinkedIn</a></li>
+        <p>Feel free to reach out to me or connect on LinkedIn and GitHub:</p>
+        <ul class="social-links">
+            <li><a href="https://github.com/tdemay2002" target="_blank" class="social-btn">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/trevor-demay-191942299" target="_blank" class="social-btn">LinkedIn</a></li>
         </ul>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Trevor DeMay. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
