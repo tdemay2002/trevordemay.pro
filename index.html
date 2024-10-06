@@ -9,11 +9,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <script src="script.js"></script>
         
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="nav-logo">
-                <a href="#home">Trevor DeMay</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#home">Trevor DeMay</a>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -22,6 +23,11 @@
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     
     <!-- Hero Section -->
@@ -73,53 +79,3 @@
     
 </body>
 </html>
-<!--/*<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Please Work</title>
-        <link rel="icon" type="image/x-icon" href="fun_pandas.JPG">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
-
-
-    <body>
-        @*the iframe is set to be the background. the tool will be used to traverse it
-        <iframe id="site" src="https://bing.com"></iframe>
-
-
-        @*the sidebar div is set to have an open and close function
-            a home function that will take you back to the default browser page
-            and a search bar that can either search youtube or google
-
-        <div class="sidebar" id="side" style="border:3px solid black;">
-            
-            @*close and home functions
-            <span id="close" onclick="closeBar()">&times;</span>
-            <a href="" onclick="goHome()">HOME</a>
-
-            @*this form is used for the search bar functionality
-            <form id="searchbox" action="javascript:void(0)" onsubmit="goTo();">
-                <ul class="list li">
-                    @*creates search bar and submit button
-                    <li>
-                        <input style="background-color:lightgrey;" id="search" name="q" type="text" placeholder="Search...">
-                        <input style="background-color:lightgrey;" type="submit" action="javascript:void(0)">
-                    </li>
-
-                    @*uses a select menu to choose between bing and youtube searches
-                    <li class="dropdown">
-                        <select onclick="searchFunction(this.value)" style="background-color:lightgrey;" name="searchboxID" id="dropdown" placeholder="Please Select One...">
-                            <div class="dropdown-content">
-                                <option value="bing">Bing</option>
-                                <option value="youtube">Youtube</option>
-                            </div>
-                        </select>
-                    </li>	
-                </ul>
-            </form>
-        </div>
-        @*open sidebar button
-        <span id="open" onclick="openBar()">&#9776; Menu</span>
-    </body>
-</html>-->
