@@ -60,28 +60,21 @@ body {
 
 /* mobile screen navigation bar*/
 @media(max-width: 768px){
-    
-    .navBar.active {
-        background-color: #333;
-        padding: 20px 100px;
-        transition: padding 0.3s ease;
-    }
-    
+
     .nav-logo {
-        left: 50%;
-        transform: translateX(25px);
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(0px);
         transition: all 0.3s ease;
-        width: auto;
-        padding: 10px 20px;
-        border-radius: 5px;
     }
     
     .nav-logo.active {
         background-color: #333;
         padding-top: 54px;
         padding-bottom: 54px;
-        border-radius: 50px;
-        transform: translateX(0px);
+        transform: translateX(-50px);
     }
 
     .nav-links {
@@ -92,11 +85,9 @@ body {
         padding-top: 10px;
         right: 0;
         width: 25%;
-        z-index: 1;
         opacity: 0;
         transform: translateX(100px);
         transition: all 0.3s ease;
-        z-index: -1;
     }
     
     .nav-links li{
