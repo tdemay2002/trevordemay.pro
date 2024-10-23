@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    z-index: 10;
+    z-index: 1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .navbar .nav-logo a {
@@ -169,7 +169,7 @@ header.hero-section {
     color: #fff;
     text-align: center;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .hero-content h1 {
@@ -221,6 +221,10 @@ p {
     margin-bottom: 20px;
 }
 
+section {
+    scroll-margin-top: 140px;
+}
+
 .about-card {
     background-color: #f9f9f9; /* Light grey background for About Me */
     border-color: #ccc; /* Subtle border */
@@ -239,6 +243,12 @@ p {
 .contact-card {
     background-color: #e8f5e9; /* Light green background for Contact */
     border-color: #4caf50; /* Green border */
+}
+
+.xmas-card {
+    background-color: #6eff7a; /* Light green background for Contact */
+    border-color: #c30f16; /* Green border */
+    border-width: 10px;
 }
 
 /* About Me Section Styling (Image & Text) */
@@ -265,13 +275,13 @@ p {
 }
 
 /* Social Buttons */
-ul.social-links {
+ul.social-links, ul.resume-links{
     list-style: none;
     margin-top: 20px;
     padding: 0;
 }
 
-ul.social-links li {
+ul.social-links li, ul.resume-links li{
     display: inline-block;
     margin: 10px;
 }
