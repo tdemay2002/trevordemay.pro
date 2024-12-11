@@ -245,12 +245,6 @@ section {
     border-color: #4caf50; /* Green border */
 }
 
-.xmas-card {
-    background-color: #6eff7a; /* Light green background for Contact */
-    border-color: #c30f16; /* Green border */
-    border-width: 10px;
-}
-
 /* About Me Section Styling (Image & Text) */
 .about-content {
     display: flex;
