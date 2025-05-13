@@ -203,7 +203,6 @@ header.hero-section {
     max-width: 1200px;
     margin: 60px auto;
     background-color: #fff;
-    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border: 2px solid #ddd; /* Light grey border */
@@ -340,7 +339,12 @@ footer {
     
     .card {
         margin: 60px 10px;
-        padding: 30px;
+        padding: auto;
+    }
+
+    .inner-card {
+        margin: auto;
+        padding: 0px;
     }
     
     /* About Me Section Layout Adjustments */
