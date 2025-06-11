@@ -14,7 +14,6 @@ body {
     padding-top: 60px; /* Account for fixed navbar */
 }
 
-
 /* fullscreen navigation bar */
 .navbar {
     position: fixed;
@@ -278,6 +277,28 @@ ul.social-links li, ul.resume-links li{
     display: inline-block;
     margin: 10px;
 }
+
+.inner-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-card .social-btn {
+    margin-top: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.carousel-control-prev.disabled,
+.carousel-control-next.disabled {
+  opacity: 0.3;
+  pointer-events: none; /* prevents clicks */
+  cursor: default;
+}
+
 
 .social-btn {
     text-decoration: none;
