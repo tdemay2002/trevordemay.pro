@@ -1,7 +1,7 @@
 # All About Trevor DeMay
 
-Working on developing a website about me for future employers.
+This is a website I have designed for the sake of practing my skills and sharing my portfolio.
 
 ```bash
-Work in progress...
+I am consitently editing this page. It is subject to change.
 ```
