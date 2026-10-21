@@ -1,0 +1,12 @@
+.git
+.github
+.devcontainer
+.vscode
+node_modules
+.env
+.env.*
+*.pem
+*.key
+*.log
+Dockerfile
+.dockerignore
