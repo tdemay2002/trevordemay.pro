@@ -1,0 +1,15 @@
+# Secrets hehehe
+.env
+.env.*
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+
+# Generated files
+dist/
+build/
+
+# Logs
+*.log
